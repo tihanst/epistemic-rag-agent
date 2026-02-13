@@ -100,7 +100,7 @@ This creates a `roman_history` database, enables the required extensions (`vecto
 #### Populate the database
 
 ```bash
-cd setup && uv run fill_database.py
+cd setup && unzip -o database_data.jsonl.zip && uv run fill_database.py
 ```
 
 This loads the ~8,000 pre-processed chunks (with embeddings, compressed text, and NER entities) from `database_data.jsonl` into the `history` table.
